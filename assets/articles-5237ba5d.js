@@ -1,0 +1,1 @@
+import{g as s}from"./request-39338cfd.js";const l=()=>s("/api/v1/articles"),c=(a,i)=>s("/api/v1/articles/",{page:a,category:i}),o=()=>s("/api/v1/article_categories"),e=a=>s("/api/v1/articles/"+a),r=a=>s("/api/v1/articles/"+a);export{r as a,o as b,c,e as d,l};

@@ -1,0 +1,1 @@
+import{g as o,p as s,a as t}from"./request-39338cfd.js";const r=a=>s("/api/v1/auth/login",a),e=a=>s("/api/v1/auth/reg",a),i=()=>o("/api/v1/user/info"),n=a=>t("/api/v1/user/modify",a);export{r as a,i as l,e as r,n as u};
