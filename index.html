@@ -2,79 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fuck</title>
-    <style>
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-      #Fuck {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-      .Fuck {
-        display: flex;
-        width: 100%;
-        height: 100vh;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        text-align: center;
-      }
-      .Fuckboxcon {
-        width: 40vw;
-        height: 40vh;
-        list-style: none;
-      }
-      img {
-        width: 300px;
-      }
-    </style>
+    <title>Vite + React + TS</title>
   </head>
-
   <body>
-    <div id="Fuck"></div>
-    <script src="./libs/babel.js"></script>
-    <script src="./libs/react.js"></script>
-    <script src="./libs/react-dom.development.js"></script>
-    <script src="data/people.js"></script>
-
-    <script type="text/babel" src="./hooks/desc.js"></script>
-
-    <script type="text/babel">
-      const Fuck = ReactDOM.createRoot(document.getElementById("Fuck"));
-      // function App() {
-      //   return (
-      //     <div className="fuckbox">
-      //       <ul>
-      //         {people.map((item) => (
-      //           <li key={item.id}>
-      //             <h1>{item.name}</h1>
-      //             <img key={item.id} src={item.img} />
-      //             <p>{item.desc}</p>
-      //           </li>
-      //         ))}
-      //       </ul>
-      //     </div>
-      //   );
-      // }
-      function App() {
-        const say = (n) => {
-          console.log(n + "say");
-        };
-        return (
-          <div className="Fuck">
-            {people.map((item) => (
-              <Desc {...item} key={item.id} say={say} />
-            ))}
-          </div>
-        );
-      }
-
-      Fuck.render(<App />);
-    </script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
